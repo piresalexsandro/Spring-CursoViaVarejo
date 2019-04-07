@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Cadastro</title>
+</head>
+<body>
+	<h1>Cadastro</h1>
+	<fieldset>
+		<legend>Formulário de Cadastro de Pedido</legend>
+		<form action="Pedido" method="POST">
+			<div align="center">
+			  <table>	
+				<tr>
+				  <td>
+					<label>Codigo do Pedido</label>
+					<input type="number" name="Codigo" required="required"/>	  
+				  </td>
+				</tr>
+				 
+				<tr>
+				  <td>
+					<label>Data</label> 
+					<input type="date" name="data" required="required"/> 
+				  </td>
+				</tr>
+				 
+				<tr>
+				  <td>
+					<label>Data da Alteração</label> 
+					<input type="date" name="dataAlteracao" required="required"/> 
+				  </td>
+				</tr>
+				 
+				<tr>
+				  <td>
+					<label>Nome do Cliente</label> 
+					<input type="text" name="NomeCliente" required="required"/> 
+				  </td>
+				</tr>
+				 
+				<tr>
+				  <td>
+					<label>Valor Total do Pedido</label>
+					<input type="number" step="0.01" name="valorPedido" required="required"/> 
+				  </td>
+				</tr>
+
+
+
+					<tr>
+					  <td>
+						<label>Codigo do Item</label>
+						<input type="number" name="codigoItem" required="required"/>	  
+					  </td>
+					</tr>
+	
+					<tr>
+					  <td>
+						<label>Descricao do Item</label> 
+						<input type="text" name="descricaoItem" required="required"/> 
+					  </td>
+					</tr>
+					 
+					<tr>
+					  <td>
+						<label>Valor do Item</label>
+						<input type="number" step="0.01" name="valorItem" required="required"/> 
+					  </td>
+					</tr>
+					 
+					<tr>
+					  <td>
+						<label>Quantidade de Itens</label>
+						<input type="number" name="quantidadeItens" required="required"/>	  
+					  </td>
+					</tr>
+
+				 
+				<tr>
+				  <td>
+					<button type="submit">Cadastrar</button>
+				  </td>
+				</tr>
+				 
+			  </table>	
+		   </div>
+		</form>
+	</fieldset>
+</body>
+</html>
